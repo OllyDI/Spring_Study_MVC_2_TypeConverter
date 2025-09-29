@@ -18,7 +18,7 @@ public class HelloController {
         return "ok";
     }
 
-    @GetMapping("/hello-v2")
+    @GetMapping("/hello-v2")    // 문자 1,000 -> 1000 포멧팅
     public String HelloV2(@RequestParam Integer data) {
         System.out.println("data = " + data);
         return "ok";
